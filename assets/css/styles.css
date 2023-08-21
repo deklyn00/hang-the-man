@@ -26,5 +26,6 @@ header h1 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: aliceblue;
-    font-size: 200%;   
+    font-size: 400%;
+    padding-top: 30px;   
 }
