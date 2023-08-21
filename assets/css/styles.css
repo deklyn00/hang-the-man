@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body p {
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+    font-size: 200%;
+}
+
+header {
+    height: 130px;
+    background-color: rgb(10, 31, 31);
+    position: relative;
+}
+
+/*Main Heading*/
+
+header h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+    font-size: 200%;   
+}
