@@ -39,7 +39,7 @@ header h1 {
 /*Hangman images*/
 #hangman_animation {
     width: 75%;
-    height: 500px;
+    height: 300px;
     margin: auto;
     background-color: red;
     display: flex;
@@ -56,66 +56,66 @@ header h1 {
 }
 
 #platform {
-transform: translate(300px,0);
+transform: translate(190px,0);
 }
 #platform img {
     width: 250px;
 }
 #hat1 {
-    transform: translate(175px,-80px);  
+    transform: translate(65px,-80px);  
 }
 #head2 {
-    transform: translate(90px,-18px);
+    transform: translate(-20px,-18px);
 }
 #head2 img {
     width: 60px;
 }
 #left_eye3 {
-    transform: translate(45px,-21px);
+    transform: translate(-65px,-21px);
 
 }
 #left_eye3 img {
     width:13px;
 }
 #right_eye4 {
-    transform: translate(48px,-21px);
+    transform: translate(-62px,-21px);
 }
 #right_eye4 img {
     width:13px;
 }
 #mouth5 {
-    transform: translate(26px,-11px);
+    transform: translate(-83px,-11px);
 }
 #mouth5 img {
     width:14px;
 }
 #spine6 {
-    transform: translate(2px,32px);
+    transform: translate(-108px,32px);
 }
 #spine6 img {
     width:36px;
 }
 #left_arm7 {
-    transform: translate(-46px,25px);
+    transform: translate(-156px,25px);
 }
 #left_arm7 img {
     width:28px;
 }
 #right_arm8 {
-    transform: translate(-40px,25px);
+    transform: translate(-150px,25px);
 }
 #right_arm8 img {
     width:28px;
 }
 #left_leg9 {
-    transform: translate(-90px,70px);
+    transform: translate(-200px,70px);
     
 }
 #left_leg9 img {
     width:18px;
 }
 #right_leg10 {
-    transform: translate(-90px,68px);
+    transform: translate(-200px,68px);
 }
 #right_leg10 img {
     width:19px;
