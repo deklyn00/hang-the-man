@@ -14,5 +14,15 @@ function random_word() {
     const randomWordIndex = Math.floor(Math.random() * cityItems.length);
     return cityItems[randomWordIndex];
 }
-
+function get_secret_word() {
+    const secretWord='';
+    var newWord= random_word();
+    for (let i=0; i < newWord.length; i++) {
+        if (newWord[i] == ' '){
+            secretWord = secretWord +' ';
+        } else {
+            secretWord = secretWord + '*';}
+    }
+}
 console.log(random_word());
+console.log(get_secret_word());
