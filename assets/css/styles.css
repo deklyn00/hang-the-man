@@ -43,6 +43,16 @@ header h1 {
     margin: auto;
     background-color: aliceblue;
 }
+
+#platform {
+    width:247px;
+    display: block;
+    height:294;
+    margin:auto;
+}
+#hat1 {
+
+}
 /*Hidden word*/
 #secret_word {
     width:75%;
