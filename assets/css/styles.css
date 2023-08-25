@@ -59,22 +59,31 @@ top: 7%;
 }
 #head2 {
     position: absolute;
-    left:50%;
+    left:53%;
+    top: 21%;
+    width:58px;
+    height:55px;
 }
 #left_eye3 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:54.5%;
+    width: 13px;
+    height: 13px;
+    top: 24%;
 }
 #right_eye4 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:56%;
+    width: 13px;
+    height: 13px;
+    top: 24%;
 }
 #mouth5 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:55%;
+    width: 14px;
+    height: 14px;
+    top: 26.5%;
 }
 #spine6 {
     position: absolute;
