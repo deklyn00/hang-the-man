@@ -42,16 +42,64 @@ header h1 {
     height: 500px;
     margin: auto;
     background-color: aliceblue;
+    position: relative;
 }
 
 #platform {
     width:247px;
     display: block;
     height:294;
-    margin:auto;
+    left:37%;
+    position: absolute;
 }
 #hat1 {
-
+position: absolute;
+left: 50%;
+top: 7%;
+}
+#head2 {
+    position: absolute;
+    left:50%;
+}
+#left_eye3 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
+}
+#right_eye4 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
+}
+#mouth5 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
+}
+#spine6 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
+}
+#left_arm7 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
+}
+#right_arm8 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
+}
+#left_leg9 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
+}
+#right_leg10 {
+    position: absolute;
+    left:50%;
+    visibility: hidden;
 }
 /*Hidden word*/
 #secret_word {
