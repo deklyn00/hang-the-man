@@ -96,29 +96,29 @@ transform: translate(300px,0);
     width:36px;
 }
 #left_arm7 {
-    visibility: hidden;
+    transform: translate(-46px,25px);
 }
 #left_arm7 img {
-    width:36px;
+    width:28px;
 }
 #right_arm8 {
-    visibility: hidden;
+    transform: translate(-40px,25px);
 }
 #right_arm8 img {
-    width:36px;
+    width:28px;
 }
 #left_leg9 {
-    visibility: hidden;
+    transform: translate(-90px,70px);
     
 }
 #left_leg9 img {
-    width:36px;
+    width:18px;
 }
 #right_leg10 {
-    visibility: hidden;
+    transform: translate(-90px,68px);
 }
 #right_leg10 img {
-    width:36px;
+    width:19px;
 }
 /*Hidden word*/
 #secret_word {
