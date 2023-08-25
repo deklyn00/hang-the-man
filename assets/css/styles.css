@@ -43,6 +43,20 @@ header h1 {
     margin: auto;
     background-color: aliceblue;
 }
+/*Hidden word*/
+#secret_word {
+    width:75%;
+    height: 100px;
+    margin: auto;
+    background-color: orangered;
+}
+/*Letters to guess*/
+#guess_buttons {
+    width:75%;
+    height: 100px;
+    margin: auto;
+    background-color: yellow;
+}
 /*Footer*/
 footer {
     font-family: 'Raleway', sans-serif;
