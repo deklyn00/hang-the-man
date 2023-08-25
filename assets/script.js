@@ -21,4 +21,25 @@ function get_hidden_word() {
     return hiddenWord;
 
 }
-console.log(get_secret_word());
+/*creating the secret word from the hidden word*/
+function get_secret_word() {
+    let secretWord='';
+    const newWord= hiddenWord;
+    for (let i=0; i < newWord.length; i++) {
+        if (newWord[i] == ' '){
+            secretWord += ' '
+        } else {
+            secretWord +='*';}
+    }
+    return secretWord;    
+}
+const hiddenWord = get_hidden_word();
+console.log(hiddenWord);
+
+const secretWord = get_secret_word();
+console.log(secretWord);
+
+function change_label (){
+const label = document.getElementById("hidden_word");
+label.innerHTML= secretWord;
+}
