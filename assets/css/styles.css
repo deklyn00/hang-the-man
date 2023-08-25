@@ -38,78 +38,87 @@ header h1 {
 }
 /*Hangman images*/
 #hangman_animation {
-    width:75%;
+    width: 75%;
     height: 500px;
     margin: auto;
-    background-color: aliceblue;
-    position: relative;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hangman-part {
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+    align-items: center;
+    margin: 20px; /* Adjust as needed */
 }
 
 #platform {
-    width:247px;
-    display: block;
-    left:37%;
-    position: absolute;
+transform: translate(300px,0);
+}
+#platform img {
+    width: 250px;
 }
 #hat1 {
-position: absolute;
-left: 50%;
-top: 7%;
+    transform: translate(175px,-80px);  
 }
 #head2 {
-    position: absolute;
-    left:53%;
-    top: 21%;
-    width:58px;
+    transform: translate(90px,-18px);
+}
+#head2 img {
+    width: 60px;
 }
 #left_eye3 {
-    position: absolute;
-    left:54.5%;
-    width: 13px;
-    top: 24%;
+    transform: translate(45px,-21px);
+
+}
+#left_eye3 img {
+    width:13px;
 }
 #right_eye4 {
-    position: absolute;
-    left:56%;
-    width: 13px;
-    top: 24%;
+    transform: translate(48px,-21px);
+}
+#right_eye4 img {
+    width:13px;
 }
 #mouth5 {
-    position: absolute;
-    left:55%;
-    width: 14px;
-    top: 26.5%;
+    transform: translate(26px,-11px);
+}
+#mouth5 img {
+    width:14px;
 }
 #spine6 {
-    position: absolute;
-    left:54%;
-    top:31%;
-    width: 36px;
+    transform: translate(2px,32px);
+}
+#spine6 img {
+    width:36px;
 }
 #left_arm7 {
-    position: absolute;
-    left:53%;
-    top:32%;
-    width:26px;
+    visibility: hidden;
+}
+#left_arm7 img {
+    width:36px;
 }
 #right_arm8 {
-    position: absolute;
-    left:56.3%;
-    top:32%;
-    width:26px;
+    visibility: hidden;
+}
+#right_arm8 img {
+    width:36px;
 }
 #left_leg9 {
-    position: absolute;
-    left:54%;
-    top:41%;
-    width:21px;
+    visibility: hidden;
     
 }
+#left_leg9 img {
+    width:36px;
+}
 #right_leg10 {
-    position: absolute;
-    left:55.9%;
-    top:41%;
-    width:21px;
+    visibility: hidden;
+}
+#right_leg10 img {
+    width:36px;
 }
 /*Hidden word*/
 #secret_word {
