@@ -48,7 +48,6 @@ header h1 {
 #platform {
     width:247px;
     display: block;
-    height:294;
     left:37%;
     position: absolute;
 }
@@ -62,27 +61,23 @@ top: 7%;
     left:53%;
     top: 21%;
     width:58px;
-    height:55px;
 }
 #left_eye3 {
     position: absolute;
     left:54.5%;
     width: 13px;
-    height: 13px;
     top: 24%;
 }
 #right_eye4 {
     position: absolute;
     left:56%;
     width: 13px;
-    height: 13px;
     top: 24%;
 }
 #mouth5 {
     position: absolute;
     left:55%;
     width: 14px;
-    height: 14px;
     top: 26.5%;
 }
 #spine6 {
@@ -90,28 +85,24 @@ top: 7%;
     left:54%;
     top:31%;
     width: 36px;
-    height:57px;
 }
 #left_arm7 {
     position: absolute;
     left:53%;
     top:32%;
     width:26px;
-    height:26px;
 }
 #right_arm8 {
     position: absolute;
     left:56.3%;
     top:32%;
     width:26px;
-    height:26px;
 }
 #left_leg9 {
     position: absolute;
     left:54%;
     top:41%;
     width:21px;
-    height: 33px;
     
 }
 #right_leg10 {
@@ -119,7 +110,6 @@ top: 7%;
     left:55.9%;
     top:41%;
     width:21px;
-    height: 33px;
 }
 /*Hidden word*/
 #secret_word {
