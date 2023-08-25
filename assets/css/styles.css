@@ -87,28 +87,39 @@ top: 7%;
 }
 #spine6 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:54%;
+    top:31%;
+    width: 36px;
+    height:57px;
 }
 #left_arm7 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:53%;
+    top:32%;
+    width:26px;
+    height:26px;
 }
 #right_arm8 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:56.3%;
+    top:32%;
+    width:26px;
+    height:26px;
 }
 #left_leg9 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:54%;
+    top:41%;
+    width:21px;
+    height: 33px;
+    
 }
 #right_leg10 {
     position: absolute;
-    left:50%;
-    visibility: hidden;
+    left:55.9%;
+    top:41%;
+    width:21px;
+    height: 33px;
 }
 /*Hidden word*/
 #secret_word {
