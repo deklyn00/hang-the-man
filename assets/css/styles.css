@@ -36,7 +36,13 @@ header h1 {
     height:731px;
     background-color: cadetblue;
 }
-
+/*Hangman images*/
+#hangman_animation {
+    width:75%;
+    height: 500px;
+    margin: auto;
+    background-color: aliceblue;
+}
 /*Footer*/
 footer {
     font-family: 'Raleway', sans-serif;
