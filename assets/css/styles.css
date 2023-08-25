@@ -38,15 +38,15 @@ header h1 {
 }
 /*Hangman images*/
 #hangman_animation {
+    padding-top: 40px;
     width: 75%;
     height: 300px;
     margin: auto;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/*Initialise Flexbox*/
 .hangman-part {
     display: flex;
     flex-direction: row;
@@ -54,22 +54,25 @@ header h1 {
     align-items: center;
     margin: 20px; /* Adjust as needed */
 }
-
+/*Platform man hangs from*/
 #platform {
 transform: translate(190px,0);
 }
 #platform img {
     width: 250px;
 }
+/*Mans Hat*/
 #hat1 {
     transform: translate(65px,-80px);  
 }
+/*Mans head*/
 #head2 {
     transform: translate(-20px,-18px);
 }
 #head2 img {
     width: 60px;
 }
+/*Mans eyes*/
 #left_eye3 {
     transform: translate(-65px,-21px);
 
@@ -83,18 +86,21 @@ transform: translate(190px,0);
 #right_eye4 img {
     width:13px;
 }
+/*mans mouth*/
 #mouth5 {
     transform: translate(-83px,-11px);
 }
 #mouth5 img {
     width:14px;
 }
+/*mans spine*/
 #spine6 {
     transform: translate(-108px,32px);
 }
 #spine6 img {
     width:36px;
 }
+/*mans limbs*/
 #left_arm7 {
     transform: translate(-156px,25px);
 }
@@ -125,14 +131,44 @@ transform: translate(190px,0);
     width:75%;
     height: 100px;
     margin: auto;
-    background-color: orangered;
 }
 /*Letters to guess*/
-#guess_buttons {
+.guess_buttons {
     width:75%;
     height: 100px;
     margin: auto;
-    background-color: yellow;
+}
+.guess_buttons button {
+    font-family: 'Barriecito', sans-serif;
+    color: aliceblue;
+    background-color: cadetblue;
+    text-decoration:solid;
+    border-radius: 3.2px;
+    padding: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width:2px ;
+    align-items: center;
+    margin: 5px;
+    font-size: 300%;
+}
+
+.guess_buttons button:hover {
+    background-color: rgb(57, 114, 116);
+}
+
+/*Hidden Word*/
+#secret_word {
+    font-family: 'Barriecito', sans-serif;
+    color: aliceblue;
+    margin:auto;
+    background-color: cadetblue;
+    text-decoration:solid;
+    padding: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+    text-align: center;
+    font-size: 350%; 
 }
 /*Footer*/
 footer {
