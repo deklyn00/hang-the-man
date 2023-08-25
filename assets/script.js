@@ -1,3 +1,4 @@
+/*Getting the Random word from our array*/
 function random_word() {
     const cityItems = [
         "building", "car", "bus", "bicycle", "traffic light", "street sign", "tree", "bench", "sidewalk", "skyscraper",
@@ -14,15 +15,10 @@ function random_word() {
     const randomWordIndex = Math.floor(Math.random() * cityItems.length);
     return cityItems[randomWordIndex];
 }
-function get_secret_word() {
-    const secretWord='';
-    var newWord= random_word();
-    for (let i=0; i < newWord.length; i++) {
-        if (newWord[i] == ' '){
-            secretWord = secretWord +' ';
-        } else {
-            secretWord = secretWord + '*';}
-    }
+/*Getting the hidden word*/
+function get_hidden_word() {
+    const hiddenWord= random_word();
+    return hiddenWord;
+
 }
-console.log(random_word());
 console.log(get_secret_word());
