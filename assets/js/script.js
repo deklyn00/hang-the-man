@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function () {
+    random_word();
+    get_hidden_word();
+    get_secret_word();
+    update_word();
+    let guessesLeft = 10;
+    let totalGuesses = 0;
+});
 /*Getting the Random word from our array*/
 function random_word() {
     const cityItems = [
@@ -33,11 +41,10 @@ function get_secret_word() {
     }
     return secretWord;    
 }
+/*Word user is guessing*/
 const hiddenWord = get_hidden_word();
-console.log(hiddenWord);
-
+/*Word user sees*/
 const secretWord = get_secret_word();
-console.log(secretWord);
 /*displaying the secret word in the label*/
 function update_word() {
 let seenWord = document.getElementById('hidden_word');
@@ -47,7 +54,7 @@ seenWord.textContent=secretWord;
     // Select all buttons
     const buttons = document.querySelectorAll('.guess_buttons button');
 
-    // Add click event listeners to buttons
+    /** Add click event listeners to buttons*/
     function guessed_letter() {
         buttons.forEach(button => {
             button.addEventListener('click', function () {

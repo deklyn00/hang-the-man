@@ -132,6 +132,9 @@ transform: translate(190px,0);
     height: 100px;
     margin: auto;
 }
+#secret_word label {
+    letter-spacing: 20px;
+}
 /*Letters to guess*/
 .guess_buttons {
     width:75%;
