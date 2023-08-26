@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
+    /**Getting random word from array*/
     function random_word() {
         const cityItems = [
             "building", "car", "bus", "bicycle", "traffic light", "street sign", "tree", "bench", "sidewalk", "skyscraper",
@@ -34,18 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
             "construction site", "crane", "roadwork", "bus stop", "traffic jam", "tourist", "tour bus", "boulevard", "alleyway",
             "apartment", "condominium", "traffic cone", "highway", "crossroads", "intersection", "bike lane", "zoo", "hospital",
             "fire station", "police car", "ambulance", "theater", "cinema", "shopping center", "market", "footbridge", "overpass",
-            "subway entrance", "billboard", "monument", "litter", "graffiti", "ATM", "news ticker", "staircase", "news van",
+            "subway entrance", "billboard", "monument", "litter", "graffiti", "helicopter", "news ticker", "staircase", "news van",
             "bus shelter", "garden", "skate park", "stadium", "court", "musician", "busker", "crowd", "lawn", "food truck"
         ];
         const randomWordIndex = Math.floor(Math.random() * cityItems.length);
         return cityItems[randomWordIndex];
     }
-
+    /**Getting the word the user has to guess */
     function get_hidden_word() {
         const hiddenWord = random_word();
         return hiddenWord;
     }
-
+    /**Getting the word that the user sees */
     function get_secret_word(hiddenWord) {
         let secretWord = '';
         for (let i = 0; i < hiddenWord.length; i++) {
@@ -57,35 +57,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return secretWord;
     }
-
+    /**Updating the secret word label for user*/
     function update_word() {
         let seenWord = document.getElementById('hidden_word');
         seenWord.textContent = secretWord;
         
     }
+    /**Updating the total tries and tries left on labels for user*/
     function updateTries(totalGuesses,guessesLeft) {
         let totalLabel = document.getElementById('total_guesses');
         totalLabel.textContent = "Total Guesses: " + totalGuesses.toString();
         let leftLabel = document.getElementById('guesses_left');
         leftLabel.textContent = "Guesses Left: " + guessesLeft.toString();
     };
+    /**Guessed Letter */
     function guess(letter) {
         let correctGuess = false;
         for (let x = 0; x < hiddenWord.length; x++) {
             if (letter === hiddenWord[x]) {
                 secretWord = secretWord.substring(0, x) + letter + secretWord.substring(x + 1);;
+                correctGuess = true;
             }
         }
-
+        if (secretWord == hiddenWord) {
+            window.alert("Well done on guessing the word!");
+        }
         if (correctGuess == false) {
             guessesLeft--;
             check_img();
             if (guessesLeft <= 0) {
                 gameOver = true;
-                alert("GAME OVER!");
+                alert(`GAME OVER! Your word was \n${hiddenWord}`);
+                let revealWord = getElementById('hidden_word');
+                revealWord.textContent = hiddenWord;
             }
-        } else {
-            correctGuess = true;
         }
         updateTries(totalGuesses,guessesLeft);
         update_word();
@@ -93,16 +98,17 @@ document.addEventListener("DOMContentLoaded", function () {
             gameOver = true;
         }
     }
+    /**updating image visible as tries left decreases */
     function check_img(){
-            if (guessesLeft === 9) {
+            if (guessesLeft == 9) {
                 let hat = document.getElementById('hat1');
                 hat.style.visibility = 'visible';
             }
-            if (guessesLeft === 8) {
+            if (guessesLeft == 8) {
                 let head = document.getElementById('head2');
                 head.style.visibility = 'visible';
             }
-            if (guessesLeft === 7) {
+            if (guessesLeft == 7) {
                 let leftEye = document.getElementById('left_eye3');
                 leftEye.style.visibility = 'visible';
             }
@@ -135,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 rightLeg.style.visibility = 'visible';
             }
     }
+    /**resetting images */
     function resetImg() {
         let hat = document.getElementById('hat1');
         hat.style.visibility = 'hidden';
@@ -156,11 +163,25 @@ document.addEventListener("DOMContentLoaded", function () {
         leftLeg.style.visibility = 'hidden';
         let rightLeg = document.getElementById('right_leg10');
         rightLeg.style.visibility = 'hidden';       
-    }
+    } 
+    /**enabling all buttons */
+    
     function resetButtons () {
         const buttons = document.getElementsByTagName("button");
             for (const button of buttons) {
             button.disabled = false;
+            button.style.backgroundColor = "cadetblue";
         }
+    }
+    
+    function newGame() {
+        let guessesLeft = 10;
+        let totalGuesses = 0;
+        let gameOver = false;
+        let hiddenWord = random_word();
+        let secretWord = get_secret_word(hiddenWord);
+        update_word();
+        resetImg();
+        resetButtons();
     }
 });
