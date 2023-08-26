@@ -66,7 +66,7 @@ header h1 {
     transform: translate(-175px, -80px); 
 }
 #hat1 img {
-    //visibility: hidden; 
+    visibility: hidden; 
 }
 /*Mans head*/
 #head2 {
@@ -74,7 +74,7 @@ header h1 {
 }
 #head2 img {
     width: 60px;
-    //visibility: hidden; 
+    visibility: hidden; 
 }
 /*Mans eyes*/
 #left_eye3 {
@@ -82,14 +82,14 @@ header h1 {
 }
 #left_eye3 img {
     width:13px;
-    //visibility: hidden; 
+    visibility: hidden; 
 }
 #right_eye4 {
     transform: translate(-302px, -21px); 
 }
 #right_eye4 img {
     width:13px;
-   // visibility: hidden; 
+    visibility: hidden; 
 }
 /*mans mouth*/
 #mouth5 {
@@ -97,7 +97,7 @@ header h1 {
 }
 #mouth5 img {
     width:14px;
-   // visibility: hidden; 
+    visibility: hidden; 
 }
 /*mans spine*/
 #spine6 {
@@ -105,7 +105,7 @@ header h1 {
 }
 #spine6 img {
     width:36px;
-   // visibility: hidden; 
+    visibility: hidden; 
 }
 /*mans limbs*/
 #left_arm7 {
@@ -113,28 +113,28 @@ header h1 {
 }
 #left_arm7 img {
     width:28px;
-   // visibility: hidden; 
+    visibility: hidden; 
 }
 #right_arm8 {
     transform: translate(-388px, 25px);
 }
 #right_arm8 img {
     width:28px;
-    // visibility:hidden; 
+    visibility:hidden; 
 }
 #left_leg9 {
     transform: translate(-438px, 70px);
 }
 #left_leg9 img {
     width:18px;
-   // visibility: hidden; 
+    visibility: hidden; 
 }
 #right_leg10 {
     transform: translate(-438px, 68px);
 }
 #right_leg10 img {
     width:19px;
-   // visibility: hidden; 
+    visibility: hidden; 
 }
 
 
@@ -500,5 +500,15 @@ header {
     #guesses_left {
         font-size: 90%;
         transform: translate(-550px,0px);
+    }
+    .guess_buttons {
+        padding-top: 50px;
+    }
+    #hidden_word {
+        padding: 2px;
+        font-size: 50%;   
+    }
+    #secret_word {
+        height: 100px;
     }
 }
