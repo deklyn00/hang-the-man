@@ -56,21 +56,21 @@ header h1 {
 }
 /*Platform man hangs from*/
 #platform {
-transform: translate(-200px,0);
+    transform: translate(-50px, 0);
 }
 #platform img {
     width: 250px;
 }
 /*Mans Hat*/
 #hat1 {
-    transform: translate(-320px,-80px); 
+    transform: translate(-175px, -80px); 
 }
 #hat1 img {
     //visibility: hidden; 
 }
 /*Mans head*/
 #head2 {
-    transform: translate(-400px,-18px); 
+    transform: translate(-260px, -18px); 
 }
 #head2 img {
     width: 60px;
@@ -78,15 +78,14 @@ transform: translate(-200px,0);
 }
 /*Mans eyes*/
 #left_eye3 {
-    transform: translate(-446px,-21px);
-
+    transform: translate(-305px, -21px);
 }
 #left_eye3 img {
     width:13px;
     //visibility: hidden; 
 }
 #right_eye4 {
-    transform: translate(-444px,-21px); 
+    transform: translate(-302px, -21px); 
 }
 #right_eye4 img {
     width:13px;
@@ -94,7 +93,7 @@ transform: translate(-200px,0);
 }
 /*mans mouth*/
 #mouth5 {
-    transform: translate(-466px,-11px); 
+    transform: translate(-325px, -11px); 
 }
 #mouth5 img {
     width:14px;
@@ -102,7 +101,7 @@ transform: translate(-200px,0);
 }
 /*mans spine*/
 #spine6 {
-    transform: translate(-489px,32px); 
+    transform: translate(-347px, 32px); 
 }
 #spine6 img {
     width:36px;
@@ -110,34 +109,37 @@ transform: translate(-200px,0);
 }
 /*mans limbs*/
 #left_arm7 {
-    transform: translate(-537px,25px);
+    transform: translate(-396px, 25px);
 }
 #left_arm7 img {
     width:28px;
    // visibility: hidden; 
 }
 #right_arm8 {
-    transform: translate(-529px,25px);
+    transform: translate(-388px, 25px);
 }
 #right_arm8 img {
     width:28px;
     // visibility:hidden; 
 }
 #left_leg9 {
-    transform: translate(-579px,70px);
-    
+    transform: translate(-438px, 70px);
 }
 #left_leg9 img {
     width:18px;
    // visibility: hidden; 
 }
 #right_leg10 {
-    transform: translate(-579px,68px);
+    transform: translate(-438px, 68px);
 }
 #right_leg10 img {
     width:19px;
    // visibility: hidden; 
 }
+
+
+
+
 /*Hidden word*/
 #secret_word {
     width:75%;
@@ -216,4 +218,287 @@ footer h2 {
     left:20;
     font-size: 100%;
     position: absolute;
+}
+/* On screens that are 1400px set the hangman image positioning */
+@media screen and (max-width: 1400px) {
+/*Platform man hangs from*/
+#platform {
+    transform: translate(60px, 0);
+}
+#platform img {
+    width: 250px;
+}
+/*Mans Hat*/
+#hat1 {
+    transform: translate(-65px, -80px); 
+}
+/*Mans head*/
+#head2 {
+    transform: translate(-150px, -18px); 
+}
+/*Mans eyes*/
+#left_eye3 {
+    transform: translate(-195px, -21px);
+}
+#right_eye4 {
+    transform: translate(-192px, -21px); 
+}
+/*mans mouth*/
+#mouth5 {
+    transform: translate(-215px, -11px); 
+}
+/*mans spine*/
+#spine6 {
+    transform: translate(-237px, 32px); 
+}
+/*mans limbs*/
+#left_arm7 {
+    transform: translate(-286px, 25px);
+}
+#right_arm8 {
+    transform: translate(-278px, 25px);
+}
+#left_leg9 {
+    transform: translate(-328px, 70px);
+}
+#right_leg10 {
+    transform: translate(-328px, 68px);
+}
+  }
+  /* On screens that are 2000px set the hangman image positioning */
+@media screen and (max-width: 2000px) {
+    /*Platform man hangs from*/
+#platform {
+    transform: translate(-240px, 0);
+}
+#platform img {
+    width: 250px;
+}
+/*Mans Hat*/
+#hat1 {
+    transform: translate(-365px, -80px); 
+}
+/*Mans head*/
+#head2 {
+    transform: translate(-450px, -18px); 
+}
+/*Mans eyes*/
+#left_eye3 {
+    transform: translate(-495px, -21px);
+}
+#right_eye4 {
+    transform: translate(-492px, -21px); 
+}
+/*mans mouth*/
+#mouth5 {
+    transform: translate(-515px, -11px); 
+}
+/*mans spine*/
+#spine6 {
+    transform: translate(-537px, 32px); 
+}
+/*mans limbs*/
+#left_arm7 {
+    transform: translate(-586px, 25px);
+}
+#right_arm8 {
+    transform: translate(-578px, 25px);
+}
+#left_leg9 {
+    transform: translate(-628px, 70px);
+}
+#right_leg10 {
+    transform: translate(-628px, 68px);
+}
+
+}
+  /* On screens that are 1660px set the hangman image positioning */
+@media screen and (max-width: 1660px) {
+/*Platform man hangs from*/
+#platform {
+    transform: translate(-140px, 0);
+}
+/*Mans Hat*/
+#hat1 {
+    transform: translate(-265px, -80px); 
+}
+/*Mans head*/
+#head2 {
+    transform: translate(-350px, -18px); 
+}
+/*Mans eyes*/
+#left_eye3 {
+    transform: translate(-395px, -21px);
+}
+
+#right_eye4 {
+    transform: translate(-392px, -21px); 
+}
+/*mans mouth*/
+#mouth5 {
+    transform: translate(-415px, -11px); 
+}
+/*mans spine*/
+#spine6 {
+    transform: translate(-437px, 32px); 
+}
+/*mans limbs*/
+#left_arm7 {
+    transform: translate(-486px, 25px);
+}
+#right_arm8 {
+    transform: translate(-478px, 25px);
+}
+#left_leg9 {
+    transform: translate(-528px, 70px);
+}
+#right_leg10 {
+    transform: translate(-528px, 68px);
+}
+}
+  /* On screens that are 900px set the hangman image positioning */
+  @media screen and (max-width: 900px) {
+    /*Platform man hangs from*/
+    #platform {
+        transform: translate(-140px, 0);
+    }
+    /*Mans Hat*/
+    #hat1 {
+        transform: translate(-265px, -80px); 
+    }
+    /*Mans head*/
+    #head2 {
+        transform: translate(-350px, -18px); 
+    }
+    /*Mans eyes*/
+    #left_eye3 {
+        transform: translate(-395px, -21px);
+    }
+    #right_eye4 {
+        transform: translate(-392px, -21px); 
+    }
+    /*mans mouth*/
+    #mouth5 {
+        transform: translate(-415px, -11px); 
+    }
+    /*mans spine*/
+    #spine6 {
+        transform: translate(-437px, 32px); 
+    }
+    /*mans limbs*/
+    #left_arm7 {
+        transform: translate(-486px, 25px);
+    }
+    #right_arm8 {
+        transform: translate(-478px, 25px);
+    }
+    #left_leg9 {
+        transform: translate(-528px, 70px);
+    }
+    #right_leg10 {
+        transform: translate(-528px, 68px);
+    }
+    }
+  /* On screens that are 1550px set the hangman image positioning */
+  @media screen and (max-width: 1550px) {
+    #total_label {
+        transform: translate(570px,-75px);
+    }
+    #total_guesses {
+        font-family: 'Barriecito', sans-serif;
+        color: aliceblue;
+        font-size: 200%;
+    }
+    #guesses_left_label {
+        transform: translate(350px,30px);
+    }
+    #guesses_left {
+        font-family: 'Barriecito', sans-serif;
+        color: aliceblue;
+        font-size: 200%;
+    }
+
+}
+  /* On screens that are 800px set the hangman image positioning */
+  @media screen and (max-width: 800px) {
+    #total_label {
+        transform: translate(450px,-75px);
+        font-size: 80%;
+    }
+/*Platform man hangs from*/
+#platform {
+    transform: translate(-40px, 0);
+}
+/*Mans Hat*/
+#hat1 {
+    transform: translate(-165px, -80px); 
+}
+/*Mans head*/
+#head2 {
+    transform: translate(-250px, -18px); 
+}
+/*Mans eyes*/
+#left_eye3 {
+    transform: translate(-295px, -21px);
+}
+#right_eye4 {
+    transform: translate(-292px, -21px); 
+}
+/*mans mouth*/
+#mouth5 {
+    transform: translate(-315px, -11px); 
+}
+/*mans spine*/
+#spine6 {
+    transform: translate(-337px, 32px); 
+}
+/*mans limbs*/
+#left_arm7 {
+    transform: translate(-386px, 25px);
+}
+#right_arm8 {
+    transform: translate(-378px, 25px);
+}
+#left_leg9 {
+    transform: translate(-428px, 70px);
+}
+#right_leg10 {
+    transform: translate(-428px, 68px);
+}
+#hidden_word {
+    font-size: 50%;
+}
+#secret_word {
+    border-style: none;
+}
+.guess_buttons {
+    background-color: cadetblue;
+}
+.guess_buttons button {
+    border-radius: 3.2px;
+    padding: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width:1px ;
+    align-items: center;
+    margin: 2px;
+    font-size: 150%;
+}
+#hangman_animation {
+    padding-top: 80px;
+}
+header {
+    height: 200px;
+}
+}
+  /* On screens that are 320px set the hangman image positioning */
+  @media screen and (max-width: 320px) {
+    #total_label {
+        transform: translate(350px,-75px);
+        font-size: 70%;
+    }
+    #guesses_left {
+        font-size: 90%;
+        transform: translate(-550px,0px);
+    }
 }
