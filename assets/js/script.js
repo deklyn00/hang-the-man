@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!gameOver) {
                 const letter = button.textContent;
                 guess(letter);
+                totalGuesses++;
             }
         });
     });
@@ -58,33 +59,37 @@ document.addEventListener("DOMContentLoaded", function () {
         seenWord.textContent = secretWord;
         
     }
-
+    function updateTries(totalGuesses,guessesLeft) {
+        let totalLabel = document.getElementById('total_guesses');
+        totalLabel.textContent = "Total Guesses: " + totalGuesses.toString();
+        let leftLabel = document.getElementById('guesses_left');
+        leftLabel.textContent = "Guesses Left: " + guessesLeft.toString();
+    };
     function guess(letter) {
         let correctGuess = false;
         for (let x = 0; x < hiddenWord.length; x++) {
             if (letter === hiddenWord[x]) {
-                secretWord = secretWord.substring(0, x) + letter + secretWord.substring(x + 1);
-                correctGuess = true;
-                totalGuesses++;
+                secretWord = secretWord.substring(0, x) + letter + secretWord.substring(x + 1);;
             }
         }
 
-        if (!correctGuess) {
-            totalGuesses++;
+        if (correctGuess == false) {
             guessesLeft--;
+            check_img();
             if (guessesLeft <= 0) {
                 gameOver = true;
+                alert("GAME OVER!");
             }
+        } else {
+            correctGuess = true;
         }
-
+        updateTries(totalGuesses,guessesLeft);
         update_word();
-        check_img();
         if (secretWord.indexOf('*') === -1) {
             gameOver = true;
         }
     }
     function check_img(){
-        with (guessesLeft){
             if (guessesLeft == 9) {
                 let hat = document.getElementById('hat1');
                 hat.style.visibility = 'visible';
@@ -125,6 +130,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 let rightLeg = document.getElementById('right_leg10');
                 rightLeg.style.visibility = 'visible';
             }
-        }
     }
 });
