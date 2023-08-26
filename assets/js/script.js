@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let secretWord = get_secret_word(hiddenWord);
     update_word();
     resetImg();
+    resetButtons();
 
     // Select all buttons
     const buttons = document.querySelectorAll('.guess_buttons button');
@@ -15,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener('click', function () {
             if (!gameOver) {
                 totalGuesses++;
+                button.disabled= true;
+                button.style.backgroundColor= "rgb(57, 114, 116)";
                 const letter = button.textContent;
                 guess(letter);
             }
@@ -153,5 +156,11 @@ document.addEventListener("DOMContentLoaded", function () {
         leftLeg.style.visibility = 'hidden';
         let rightLeg = document.getElementById('right_leg10');
         rightLeg.style.visibility = 'hidden';       
+    }
+    function resetButtons () {
+        const buttons = document.getElementsByTagName("button");
+            for (const button of buttons) {
+            button.disabled = false;
+        }
     }
 });
