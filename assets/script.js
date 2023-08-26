@@ -1,3 +1,12 @@
+/*code in lines 2-6 found online in order to run a virtual DOM environment*/
+const jsdom = require('jsdom');
+const { JSDOM } = jsdom;
+
+const dom = new JSDOM(`<!DOCTYPE html><html><body></body></html>`);
+const document = dom.window.document;
+
+// Select all buttons
+const buttons = document.querySelectorAll('.guess_buttons button');
 /*Getting the Random word from our array*/
 function random_word() {
     const cityItems = [
@@ -38,8 +47,7 @@ console.log(hiddenWord);
 
 const secretWord = get_secret_word();
 console.log(secretWord);
+/*displaying the secret word in the label*/
 
-function change_label (){
-const label = document.getElementById("hidden_word");
-label.innerHTML= secretWord;
-}
+/*Code to register which letter the user is guessing*/
+
