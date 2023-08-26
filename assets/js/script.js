@@ -80,14 +80,18 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         if (secretWord == hiddenWord) {
-            window.alert("Well done on guessing the word!");
+            if(confirm("Well done on guessing the word!")){
+                newGame();  
+            }            
         }
         if (correctGuess == false) {
             guessesLeft--;
             check_img();
             if (guessesLeft <= 0) {
                 gameOver = true;
-                alert(`GAME OVER! Your word was \n${hiddenWord}`);
+                if(confirm(`GAME OVER! Your word was \n${hiddenWord}`)){
+                    newGame();  
+                }
                 let revealWord = getElementById('hidden_word');
                 revealWord.textContent = hiddenWord;
             }
@@ -170,16 +174,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const buttons = document.getElementsByTagName("button");
             for (const button of buttons) {
             button.disabled = false;
-            button.style.backgroundColor = "cadetblue";
+            button.style.backgroundColor = "rgb(7, 40, 41)";
         }
     }
     
     function newGame() {
-        let guessesLeft = 10;
-        let totalGuesses = 0;
-        let gameOver = false;
-        let hiddenWord = random_word();
-        let secretWord = get_secret_word(hiddenWord);
+        guessesLeft = 10;
+        totalGuesses = 0;
+        gameOver = false;
+        hiddenWord = random_word();
+        secretWord = get_secret_word(hiddenWord);
         update_word();
         resetImg();
         resetButtons();

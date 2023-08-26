@@ -34,7 +34,7 @@ header h1 {
 #game_area {
     width: 100%;
     height:731px;
-    background-color: rgb(25, 63, 65);;
+    background-color: rgb(25, 63, 65);
 }
 /*Hangman images*/
 #hangman_animation {
@@ -159,7 +159,7 @@ header h1 {
 .guess_buttons button {
     font-family: 'Barriecito', sans-serif;
     color: aliceblue;
-    background-color: rgb(25, 63, 65);
+    background-color: rgb(7, 40, 41);
     text-decoration:solid;
     border-radius: 3.2px;
     padding: 10px;
@@ -180,7 +180,7 @@ header h1 {
     font-family: 'Barriecito', sans-serif;
     color: aliceblue;
     margin:auto;
-    background-color: cadetblue;
+    background-color: rgb(7, 40, 41);
     text-decoration:solid;
     padding: 10px;
     border-style: solid;
@@ -473,7 +473,7 @@ footer h2 {
     border-style: none;
 }
 .guess_buttons {
-    background-color: cadetblue;
+    background-color: rgb(25, 63, 65);
 }
 .guess_buttons button {
     border-radius: 3.2px;
