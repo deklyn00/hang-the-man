@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let hiddenWord = random_word();
     let secretWord = get_secret_word(hiddenWord);
     update_word();
+    resetImg();
 
     // Select all buttons
     const buttons = document.querySelectorAll('.guess_buttons button');
@@ -13,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     buttons.forEach(button => {
         button.addEventListener('click', function () {
             if (!gameOver) {
+                totalGuesses++;
                 const letter = button.textContent;
                 guess(letter);
-                totalGuesses++;
             }
         });
     });
@@ -90,15 +91,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     function check_img(){
-            if (guessesLeft == 9) {
+            if (guessesLeft === 9) {
                 let hat = document.getElementById('hat1');
                 hat.style.visibility = 'visible';
             }
-            if (guessesLeft == 8) {
+            if (guessesLeft === 8) {
                 let head = document.getElementById('head2');
                 head.style.visibility = 'visible';
             }
-            if (guessesLeft == 7) {
+            if (guessesLeft === 7) {
                 let leftEye = document.getElementById('left_eye3');
                 leftEye.style.visibility = 'visible';
             }
@@ -120,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             if (guessesLeft == 2) {
                 let rightArm = document.getElementById('right_arm8');
-                platform.style.visibility = 'visible';
+                rightArm.style.visibility = 'visible';
             }
             if (guessesLeft == 1) {
                 let leftLeg = document.getElementById('left_leg9');
@@ -130,5 +131,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 let rightLeg = document.getElementById('right_leg10');
                 rightLeg.style.visibility = 'visible';
             }
+    }
+    function resetImg() {
+        let hat = document.getElementById('hat1');
+        hat.style.visibility = 'hidden';
+        let head = document.getElementById('head2');
+        head.style.visibility = 'hidden';
+        let leftEye = document.getElementById('left_eye3');
+        leftEye.style.visibility = 'hidden';
+        let rightEye = document.getElementById('right_eye4');
+        rightEye.style.visibility = 'hidden';
+        let mouth = document.getElementById('mouth5');
+        mouth.style.visibility = 'hidden';
+        let spine = document.getElementById('spine6');
+        spine.style.visibility = 'hidden';
+        let leftArm = document.getElementById('left_arm7');
+        leftArm.style.visibility = 'hidden';
+        let rightArm = document.getElementById('right_arm8');
+        rightArm.style.visibility = 'hidden';
+        let leftLeg = document.getElementById('left_leg9');
+        leftLeg.style.visibility = 'hidden';
+        let rightLeg = document.getElementById('right_leg10');
+        rightLeg.style.visibility = 'hidden';       
     }
 });
