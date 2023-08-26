@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function update_word() {
         let seenWord = document.getElementById('hidden_word');
         seenWord.textContent = secretWord;
+        
     }
 
     function guess(letter) {
@@ -64,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (letter === hiddenWord[x]) {
                 secretWord = secretWord.substring(0, x) + letter + secretWord.substring(x + 1);
                 correctGuess = true;
+                totalGuesses++;
             }
         }
 
@@ -76,9 +78,53 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         update_word();
-
+        check_img();
         if (secretWord.indexOf('*') === -1) {
             gameOver = true;
+        }
+    }
+    function check_img(){
+        with (guessesLeft){
+            if (guessesLeft == 9) {
+                let hat = document.getElementById('hat1');
+                hat.style.visibility = 'visible';
+            }
+            if (guessesLeft == 8) {
+                let head = document.getElementById('head2');
+                head.style.visibility = 'visible';
+            }
+            if (guessesLeft == 7) {
+                let leftEye = document.getElementById('left_eye3');
+                leftEye.style.visibility = 'visible';
+            }
+            if (guessesLeft == 6) {
+                let rightEye = document.getElementById('right_eye4');
+                rightEye.style.visibility = 'visible';
+            }
+            if (guessesLeft == 5) {
+                let mouth = document.getElementById('mouth5');
+                mouth.style.visibility = 'visible';
+            }
+            if (guessesLeft == 4) {
+                let spine = document.getElementById('spine6');
+                spine.style.visibility = 'visible';
+            }
+            if (guessesLeft == 3) {
+                let leftArm = document.getElementById('left_arm7');
+                leftArm.style.visibility = 'visible';
+            }
+            if (guessesLeft == 2) {
+                let rightArm = document.getElementById('right_arm8');
+                platform.style.visibility = 'visible';
+            }
+            if (guessesLeft == 1) {
+                let leftLeg = document.getElementById('left_leg9');
+                leftLeg.style.visibility = 'visible';
+            }      
+            if (guessesLeft == 1) {
+                let rightLeg = document.getElementById('right_leg10');
+                rightLeg.style.visibility = 'visible';
+            }
         }
     }
 });

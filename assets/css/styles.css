@@ -63,14 +63,18 @@ transform: translate(190px,0);
 }
 /*Mans Hat*/
 #hat1 {
-    transform: translate(65px,-80px);  
+    transform: translate(65px,-80px); 
+}
+#hat1 img {
+    visibility: hidden; 
 }
 /*Mans head*/
 #head2 {
-    transform: translate(-20px,-18px);
+    transform: translate(-20px,-18px); 
 }
 #head2 img {
     width: 60px;
+    visibility: hidden; 
 }
 /*Mans eyes*/
 #left_eye3 {
@@ -79,26 +83,30 @@ transform: translate(190px,0);
 }
 #left_eye3 img {
     width:13px;
+    visibility: hidden; 
 }
 #right_eye4 {
-    transform: translate(-62px,-21px);
+    transform: translate(-62px,-21px); 
 }
 #right_eye4 img {
     width:13px;
+    visibility: hidden; 
 }
 /*mans mouth*/
 #mouth5 {
-    transform: translate(-83px,-11px);
+    transform: translate(-83px,-11px); 
 }
 #mouth5 img {
     width:14px;
+    visibility: hidden; 
 }
 /*mans spine*/
 #spine6 {
-    transform: translate(-108px,32px);
+    transform: translate(-108px,32px); 
 }
 #spine6 img {
     width:36px;
+    visibility: hidden; 
 }
 /*mans limbs*/
 #left_arm7 {
@@ -106,12 +114,14 @@ transform: translate(190px,0);
 }
 #left_arm7 img {
     width:28px;
+    visibility: hidden; 
 }
 #right_arm8 {
     transform: translate(-150px,25px);
 }
 #right_arm8 img {
     width:28px;
+    visibility:hidden; 
 }
 #left_leg9 {
     transform: translate(-200px,70px);
@@ -119,12 +129,14 @@ transform: translate(190px,0);
 }
 #left_leg9 img {
     width:18px;
+    visibility: hidden; 
 }
 #right_leg10 {
     transform: translate(-200px,68px);
 }
 #right_leg10 img {
     width:19px;
+    visibility: hidden; 
 }
 /*Hidden word*/
 #secret_word {
