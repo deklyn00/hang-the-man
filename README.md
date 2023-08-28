@@ -50,7 +50,7 @@ Live Link: [Hangman Game Live Link](https://your-github-username.github.io/hangm
 
 ### Acknowledgements
 - The hangman game concept and design were inspired by classic hangman games.
-- Help with understanding image overlapping in flexbox provided in this video: [Flexbox translating]("https://www.youtube.com/embed/qyQm8YeGMJQ?si=QeO3j5dq2CWV3Xts")
+- Help with understanding image overlapping in flexbox provided in this video: [Flexbox translating](https://www.youtube.com/embed/qyQm8YeGMJQ?si=QeO3j5dq2CWV3Xts)
 
 
 ## Bugs and Improvements
