@@ -13,12 +13,12 @@ Live Link: [Hangman Game Live Link](https://your-github-username.github.io/hangm
 ### Landing Page
 The landing page introduces the Hang The Man prject as an image of the platform is presented along with the hidden word presented as astericks, a selection of all available letters to select can be found just above the footer. 
 
-![Title Image](image.png)
+![Title Image](assets/images/Title.PNG)
 
 ### Interactive Gameplay
 Players can click on the letter buttons to guess letters. The game updates the display with correctly guessed letters and the hangman figure as needed.
 
-![Game Image](gamescrnsht.PNG)
+![Game Image](assets/images/gamescrnsht.PNG)
 
 ### Win and Lose Conditions
 The game tracks the player's progress and provides feedback on whether the player has won by correctly guessing the word or lost by using all of the available attempts.
@@ -50,7 +50,7 @@ Live Link: [Hangman Game Live Link](https://your-github-username.github.io/hangm
 
 ### Acknowledgements
 - The hangman game concept and design were inspired by classic hangman games.
-- Help with understanding image overlapping in flexbox provided in this video<iframe width="560" height="315" src="https://www.youtube.com/embed/qyQm8YeGMJQ?si=QeO3j5dq2CWV3Xts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+- Help with understanding image overlapping in flexbox provided in this video: [Flexbox translating]("https://www.youtube.com/embed/qyQm8YeGMJQ?si=QeO3j5dq2CWV3Xts")
 
 
 ## Bugs and Improvements
