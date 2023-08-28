@@ -216,7 +216,7 @@ footer {
 }
 footer h2 {
     bottom:0;
-    left:20;
+    left:20px;
     font-size: 100%;
     position: absolute;
 }
@@ -510,6 +510,6 @@ header {
         font-size: 50%;   
     }
     #secret_word {
-        height: 100px;
+        height: 150px;
     }
 }

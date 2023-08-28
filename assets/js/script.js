@@ -40,11 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const randomWordIndex = Math.floor(Math.random() * cityItems.length);
         return cityItems[randomWordIndex];
     }
-    /**Getting the word the user has to guess */
-    function get_hidden_word() {
-        const hiddenWord = random_word();
-        return hiddenWord;
-    }
     /**Getting the word that the user sees */
     function get_secret_word(hiddenWord) {
         let secretWord = '';
