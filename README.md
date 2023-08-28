@@ -3,7 +3,7 @@
 ## Introduction
 Hangman Game is a project that showcases the implementation of a classic hangman game using HTML, CSS, and JavaScript. Players can interact with the game, guessing letters to complete a hidden word while avoiding mistakes.
 
-Live Link: [Hangman Game Live Link](https://your-github-username.github.io/hangman-game/)
+Live Link: [Hangman Game Live Link](https://deklyn00.github.io/hang-the-man/)
 
 ## Goals
 - Allow players to guess letters and find out what the secret word is.
@@ -27,7 +27,7 @@ The game tracks the player's progress and provides feedback on whether the playe
 Restarting the game is done by refreshing the page, winning or losing.
 
 ## How to Play
-1. Visit the live link: [Hangman Game Live Link](https://your-github-username.github.io/hangman-game/)
+1. Visit the live link: [Hangman Game Live Link](https://deklyn00.github.io/hang-the-man/)
 2. Click on the letter buttons to guess letters and complete the word.
 3. Guess the word before running out of attempts.
 
@@ -42,7 +42,7 @@ The Hangman Game project was deployed using GitHub Pages. Here are the deploymen
 2. In the GitHub Pages section, select the Master Branch as the source.
 3. After selecting the Master Branch, the live link will be displayed indicating the successful deployment.
 
-Live Link: [Hangman Game Live Link](https://your-github-username.github.io/hangman-game/)
+Live Link: [Hangman Game Live Link](https://deklyn00.github.io/hang-the-man/)
 
 ## Credits
 ### Images
