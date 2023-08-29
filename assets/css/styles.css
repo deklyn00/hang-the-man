@@ -471,6 +471,7 @@ footer h2 {
 }
 #secret_word {
     border-style: none;
+    width:100%; 
 }
 .guess_buttons {
     background-color: rgb(25, 63, 65);

@@ -35,6 +35,8 @@ Restarting the game is done by refreshing the page, winning or losing.
 Browsers tested include Chrome, Firefox, Safari, and Edge. All tested browsers displayed the game correctly, maintaining its functionality and design.
 
 All HTML passed through the W3C Validator. All CSS passed through the Jigsaw Validator. All javascript passed through the JSHINT.
+### Passed Lighthouse test
+![Lighthouse Image](assets/images/Lighthouse.PNG)
 
 ## Deployment
 The Hangman Game project was deployed using GitHub Pages. Here are the deployment steps:
